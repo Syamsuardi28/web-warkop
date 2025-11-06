@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Warkop Kita — suasana hangat, kopi nikmat, dan camilan rumahan di Makassar."
+    />
+    <title>Warkop Kita — Suasana & Kopi</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo">Warkop <span>Kita</span></a>
+        <nav class="main-nav" id="mainNav">
+          <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+            ☰
+          </button>
+          <ul class="nav-list" id="navList">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#philosophy">Filosofi</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <button id="themeToggle" class="btn small" aria-label="Ubah Tema">
+            🌙
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay">
+          <div class="container hero-content">
+            <h1>Selamat Datang di <strong>Warkop Kita</strong></h1>
+            <p><strong> hangat, kopi nikmat, dan camilan rumahan.</strong></p>
+            <div class="hero-ctas">
+              <a href="#menu" class="btn">Lihat Menu</a>
+              <a href="#contact" class="btn ghost">Reservasi</a>
+            </div>
+          </div>
+        </div>
+        <div class="steam" aria-hidden="true">
+          <div class="steam-line s1"></div>
+          <div class="steam-line s2"></div>
+          <div class="steam-line s3"></div>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <div class="container">
+          <h2 class="section-title">Menu Kopi & Camilan</h2>
+          <p class="lead">Pilih kategori untuk menyaring menu.</p>
+
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="hot">Kopi Panas</button>
+            <button class="filter-btn" data-filter="cold">Es Kopi</button>
+            <button class="filter-btn" data-filter="snack">Camilan</button>
+          </div>
+
+          <div class="menu-grid" id="menuGrid">
+            <article class="card" data-category="hot">
+              <img src="assets/coffee1.jpg" alt="Espresso" />
+              <h3>Espresso</h3>
+              <p>Kopi hitam pekat dengan aroma khas.</p>
+            </article>
+            <article class="card" data-category="cold">
+              <img src="assets/coffee2.jpg" alt="Es Kopi Susu" />
+              <h3>Es Kopi Susu</h3>
+              <p>Perpaduan kopi, susu, dan gula aren.</p>
+            </article>
+            <article class="card" data-category="snack">
+              <img src="assets/snack1.jpg" alt="Pisang Goreng" />
+              <h3>Pisang Goreng</h3>
+              <p>Camilan renyah yang pas dengan kopi hangat.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="philosophy" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Filosofi Kami</h2>
+          <p>
+            Kami percaya setiap cangkir kopi menyimpan cerita dan kehangatan,
+            menjadi jembatan pertemanan dan inspirasi. Di setiap tegukan,
+            terselip rasa yang lahir dari biji terbaik, diseduh dengan sepenuh
+            hati oleh tangan-tangan yang berpengalaman. Bagi kami, warkop bukan
+            sekadar tempat menikmati kopi — tetapi ruang untuk berbagi tawa,
+            melepas penat, dan menemukan ide-ide baru. Di sini, setiap aroma
+            kopi yang menyeruak adalah undangan untuk berhenti sejenak,
+            menikmati momen, dan menghargai kebersamaan. Karena di Warkop Kita,
+            kami percaya bahwa suasana yang hangat dan rasa yang tulus akan
+            selalu menghadirkan kenangan yang tak tergantikan.
+          </p>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="container">
+          <h2 class="section-title">Galeri</h2>
+          <div class="gallery-grid">
+            <img src="assets/gallery1.jpg" alt="Suasana warkop" />
+            <img src="assets/gallery2.jpg" alt="Kopi latte art" />
+            <img src="assets/gallery3.jpg" alt="Camilan tradisional" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Hubungi Kami</h2>
+          <p>📍 Samata, Gowa</p>
+          <p>📞 0812-4189-3329</p>
+          <p>✉️ syamsuardi@warkopkita.id</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Warkop Kita — Semua hak dilindungi.</p>
+        <p>Buka setiap hari 08.00 - 23.00</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

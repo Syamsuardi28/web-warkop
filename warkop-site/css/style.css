@@ -1,0 +1,243 @@
+:root {
+  --primary: #5c3d2e;
+  --secondary: #d6b98c;
+  --background: #fff8f0;
+  --text: #2c2c2c;
+  --accent: #b77b4a;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: var(--text);
+  background: var(--background);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.site-header {
+  background: var(--primary);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--secondary);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: var(--secondary);
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background: url("../assets/coffee1.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  animation: fadeIn 5s ease-in-out infinite;
+}
+
+.hero .btn {
+  margin: 10px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 0;
+}
+
+.section.alt {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(23, 20, 20, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* BUTTONS */
+.btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  background: var(--secondary);
+}
+
+/* FILTER BUTTONS */
+.filters {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  border-style: solid;
+  color: var(--primary);
+  border-width: 2px;
+  box-shadow: #5c3d2e 0px 4px 6px -1px, #5c3d2e 0px 2px 4px -1px;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* RESPONSIVE NAV */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+  }
+
+  .main-nav ul.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* DARK MODE */
+body.dark {
+  background: #1b1b1b;
+  color: #f0f0f0;
+}
+
+body.dark .site-header,
+body.dark .site-footer {
+  background: #000;
+}
